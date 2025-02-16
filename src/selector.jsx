@@ -187,6 +187,7 @@ function findNewEventMenuEventId() {
   if (element === null || element.getAttribute(eventIdAttribute) === null) {
     console.error("Failed getting event ID");
   }
+  // TODO: this throws error when creating an event by double clicking
   return element.getAttribute(eventIdAttribute);
 }
 
